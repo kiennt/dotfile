@@ -1,7 +1,8 @@
 #!/usr/bin/env sh
-rm -rf $HOME/.vim $HOME/.vimrc $HOME/.inputrc $HOME/.bashrc
+rm -rf $HOME/.vim $HOME/.vimrc $HOME/.inputrc $HOME/.bashrc $HOME/.gitcolor
 
 ln -s `pwd`/vim $HOME/.vim
 ln -s `pwd`/vim/vimrc $HOME/.vimrc
 ln -s `pwd`/inputrc $HOME/.inputrc
 ln -s `pwd`/bashrc $HOME/.bashrc
+ln -s `pwd`/gitcolor $HOME/.gitcolor
