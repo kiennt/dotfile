@@ -62,7 +62,6 @@ au BufNewFile,BufRead *.sass set filetype=scss
 
 " turn on all plugin
 filetype plugin on
-set colorcolumn=82
 
 " mix tab for file type
 autocmd FileType html setlocal shiftwidth=2 tabstop=2
