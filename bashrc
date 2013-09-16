@@ -15,10 +15,10 @@ function parse_git_branch {
 # set a fancy prompt (non-color, unless we know we "want" color)
 case "$TERM" in
 xterm-color)
-    PS1='[\[\033[01;34m\]\h]:\w\[\033[01;31m\]`parse_git_branch`\[\033[00m\]\$ '
+    PS1='[\[\033[01;34m\]\u@\h]:\w\[\033[01;31m\]`parse_git_branch`\[\033[00m\]\$ '
     ;;
 *)
-    PS1='[\[\033[01;34m\]\h]:\w\[\033[01;31m\](`__git_heads`)\[\033[00m\]\$ '
+    PS1='[\[\033[01;34m\]\u@\h]:\w\[\033[01;31m\](`__git_heads`)\[\033[00m\]\$ '
     ;;
 esac
 

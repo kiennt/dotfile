@@ -100,3 +100,8 @@ autocmd FileType ruby set omnifunc=rubycomplete#Complete
 map rt :!bundle list --paths=true \| xargs ctags --extra=+f --exclude=.git --exclude=log -R * -<CR>
 nmap <F8> :TagbarToggle<CR>
 set nofoldenable    "dont fold by default
+
+
+" highlight overtext
+highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+match OverLength /\%81v.\+/
