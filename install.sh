@@ -13,7 +13,7 @@ function copy_files {
 
 function install {
     echo "Installing dotfile for the first time"
-    git clone https://github.com/skwp/dotfiles.git "$APP_DIR"
+    git clone git@github.com:/kiennt/dotfile.git "$APP_DIR"
     copy_files
 }
 
