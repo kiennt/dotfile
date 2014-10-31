@@ -3,7 +3,7 @@
 APP_DIR=$HOME/.kiennt_dotfile
 
 if [ ! -d "$APP_DIR" ]; then
-    echo "Installing YADR for the first time"
+    echo "Installing dotfile for the first time"
     git clone https://github.com/skwp/dotfiles.git "$APP_DIR"
     cd "$APP_DIR"
     for f in .*; do
@@ -13,5 +13,5 @@ if [ ! -d "$APP_DIR" ]; then
     done
 
 else
-    echo "YADR is already installed"
+    echo "dotfile is already installed"
 fi
