@@ -1,0 +1,6 @@
+# Load completion
+export COMPLETION_FILES="$HOME/.completion/*.bash"
+for file in $COMPLETION_FILES
+do
+    source $file
+done

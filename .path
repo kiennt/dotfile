@@ -1,0 +1,4 @@
+# Add /usr/local/sbin to PATH
+# This is useful for installing rabbitmq with brew
+export PATH=/usr/local/sbin:$PATH
+
