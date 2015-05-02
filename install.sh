@@ -12,8 +12,9 @@ function copy_files {
 }
 
 function install {
+    rm -rf "$APP_DIR"
     echo "Installing dotfile for the first time"
-    git clone git@github.com:/kiennt/dotfile.git "$APP_DIR"
+    git clone https://github.com/kiennt/dotfile.git "$APP_DIR"
     copy_files
 }
 
