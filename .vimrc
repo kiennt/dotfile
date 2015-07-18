@@ -98,22 +98,22 @@ highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 match OverLength /\%80v.\+/
 
 " Add the virtualenv's site-packages to vim path
-py << EOF
-import os.path
-import sys
-import vim
-if 'VIRTUAL_ENV' in os.environ:
-    project_base_dir = os.environ['VIRTUAL_ENV']
-    sys.path.insert(0, project_base_dir)
-    activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
-    execfile(activate_this, dict(__file__=activate_this))
-EOF
+"py << EOF
+"import os.path
+"import sys
+"import vim
+"if 'VIRTUAL_ENV' in os.environ:
+    "project_base_dir = os.environ['VIRTUAL_ENV']
+    "sys.path.insert(0, project_base_dir)
+    "activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
+    "execfile(activate_this, dict(__file__=activate_this))
+"EOF
 
 " pyflake
-autocmd BufWritePost *.py call Flake8()
-let g:flake8_show_quickfix=1
-let g:flake8_show_in_gutter=0
-let g:flake8_show_in_file=0
+"autocmd BufWritePost *.py call Flake8()
+"let g:flake8_show_quickfix=1
+"let g:flake8_show_in_gutter=0
+"let g:flake8_show_in_file=0
 
 " ctags
 map <leader>r ctags -R .<cr>
