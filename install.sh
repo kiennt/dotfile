@@ -16,6 +16,7 @@ function install {
     echo "Installing dotfile for the first time"
     git clone https://github.com/kiennt/dotfile.git "$APP_DIR"
     copy_files
+    vim +PluginInstall +qall
 }
 
 
